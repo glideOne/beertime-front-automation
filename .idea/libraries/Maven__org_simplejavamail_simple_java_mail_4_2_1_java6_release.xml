@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.simplejavamail:simple-java-mail:4.2.1-java6-release">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/simplejavamail/simple-java-mail/4.2.1-java6-release/simple-java-mail-4.2.1-java6-release.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/simplejavamail/simple-java-mail/4.2.1-java6-release/simple-java-mail-4.2.1-java6-release-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/simplejavamail/simple-java-mail/4.2.1-java6-release/simple-java-mail-4.2.1-java6-release-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
