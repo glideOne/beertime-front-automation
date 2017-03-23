@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by ovidiu.zakarias on 20.03.2017.
  */
-public class CM {
+public class CasaMuresana {
     private WebDriver driver;
 
     //Page URL
@@ -23,7 +23,7 @@ public class CM {
     private List<WebElement> dailymenu;
 
     //Constructor
-    public CM(WebDriver driver) {
+    public CasaMuresana(WebDriver driver) {
 
         this.driver = driver;
         driver.get(PAGE_URL);

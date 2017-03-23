@@ -1,7 +1,7 @@
 package com.meniulzilei.tests;
 
 import com.meniulzilei.utils.EmailSender;
-import com.meniulzilei.webpages.CM;
+import com.meniulzilei.webpages.CasaMuresana;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -33,7 +33,7 @@ public class GetDailyMenu {
     public void checkMenu() {
 
         //Create object of Page Class
-        CM page = new CM(driver);
+        CasaMuresana page = new CasaMuresana(driver);
 
         page.listMenuEntries();
 
