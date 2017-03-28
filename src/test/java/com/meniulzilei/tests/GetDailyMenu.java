@@ -51,7 +51,7 @@ public class GetDailyMenu {
     }
 
     @AfterMethod
-    public void tearDown(ITestResult result) {
+    public void shutdownDriverAndSendMail(ITestResult result) {
 
         if (result.getStatus() == ITestResult.SUCCESS) {
 
