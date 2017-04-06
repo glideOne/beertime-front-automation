@@ -1,5 +1,6 @@
 package com.meniulzilei.tests;
 
+
 import com.meniulzilei.utils.EmailSender;
 import com.meniulzilei.webpages.CasaMuresana;
 import org.openqa.selenium.WebDriver;
@@ -42,16 +43,16 @@ public class GetDailyMenu {
         /**
          * Meniul super:
          */
-        //assertThat(meniulZilei, containsString("artofi gratina"));
-        //assertThat(meniulZilei, containsString("iept de pui cu sos gorgonzola"));
-        //assertThat(meniulZilei, containsString("rofiterol"));
+        assertThat(meniulZilei, containsString("artofi gratina"));
+        assertThat(meniulZilei, containsString("iept de pui cu sos gorgonzola"));
+        assertThat(meniulZilei, containsString("rofiterol"));
 
         assertThat(meniulZilei, containsString("Cotlet de porc"));
 
     }
 
     @AfterMethod
-    public void shutdownDriverAndSendMail(ITestResult result) {
+    public void tearDown(ITestResult result) {
 
         if (result.getStatus() == ITestResult.SUCCESS) {
 
