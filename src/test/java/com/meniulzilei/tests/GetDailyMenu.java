@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import static com.meniulzilei.webpages.CasaMuresana.PAGE_URL;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
@@ -25,8 +26,9 @@ public class GetDailyMenu {
 
         System.setProperty("webdriver.chrome.driver", ("/home/training/chromedriver/chromedriver"));
         driver = new ChromeDriver();
+        driver.get(PAGE_URL);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
 
     }
 
@@ -43,11 +45,11 @@ public class GetDailyMenu {
         /**
          * Meniul super:
          */
-        assertThat(meniulZilei, containsString("artofi gratina"));
-        assertThat(meniulZilei, containsString("iept de pui cu sos gorgonzola"));
-        assertThat(meniulZilei, containsString("rofiterol"));
+        //assertThat(meniulZilei, containsString("artofi gratina"));
+        //assertThat(meniulZilei, containsString("iept de pui cu sos gorgonzola"));
+        //assertThat(meniulZilei, containsString("rofiterol"));
 
-        assertThat(meniulZilei, containsString("Cotlet de porc"));
+        assertThat(meniulZilei, containsString("Fleica de porc"));
 
     }
 

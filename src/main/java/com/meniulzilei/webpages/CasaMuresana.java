@@ -16,7 +16,7 @@ public class CasaMuresana {
     private WebDriver driver;
 
     //Page URL
-    private static String PAGE_URL = "http://www.meniulzilei.info/targu-mures/restaurant/restaurant-casa-muresana";
+    public static final String PAGE_URL = "http://www.meniulzilei.info/targu-mures/restaurant/restaurant-casa-muresana";
 
     //Locators
     //Menu element:
@@ -27,7 +27,6 @@ public class CasaMuresana {
     public CasaMuresana(WebDriver driver) {
 
         this.driver = driver;
-        driver.get(PAGE_URL);
 
         //Initialise Elements:
         PageFactory.initElements(driver, this);
