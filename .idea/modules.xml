@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MeniulZilei.iml" filepath="$PROJECT_DIR$/MeniulZilei.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beertime-front-automation.iml" filepath="$PROJECT_DIR$/beertime-front-automation.iml" />
     </modules>
   </component>
 </project>

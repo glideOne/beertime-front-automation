@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="MeniulZilei" />
+        <module name="beertime-front-automation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MeniulZilei" target="1.5" />
+      <module name="beertime-front-automation" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
