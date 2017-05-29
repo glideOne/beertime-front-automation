@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7f28858-2422-48c2-a91e-9a3d60bba1b5" name="Default" comment="" />
+    <list default="true" id="d7f28858-2422-48c2-a91e-9a3d60bba1b5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/beertime/sixteensixtyfour/base/AbstractTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/beertime/sixteensixtyfour/base/AbstractTest.java" />
+    </list>
     <ignored path="beertime-front-automation.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,8 +51,8 @@
       <file leaf-file-name="AbstractTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/beertime/sixteensixtyfour/base/AbstractTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="37" column="38" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+            <state relative-caret-position="500">
+              <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,8 +105,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/conf/beertime-automation-conf.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/conf/beertimev2.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/beertime/sixteensixtyfour/webpages/AgeGate.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/beertime/sixteensixtyfour/base/AbstractTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/beertime/sixteensixtyfour/agegatetests/AgeGateTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/beertime/sixteensixtyfour/base/AbstractTest.java" />
       </list>
     </option>
   </component>
@@ -1252,8 +1254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/beertime/sixteensixtyfour/base/AbstractTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="37" column="38" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        <state relative-caret-position="500">
+          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
