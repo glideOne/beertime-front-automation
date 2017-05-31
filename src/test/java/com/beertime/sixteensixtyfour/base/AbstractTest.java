@@ -28,8 +28,6 @@ public abstract class AbstractTest extends AbstractTestNGSpringContextTests {
     protected ContentAndStory contentAndStory;
     protected ProductPage productPage;
 
-    //asdada
-
     @Value("${beertime.base.url}")
     protected String baseUrl;
 
