@@ -4,8 +4,14 @@ import com.beertime.sixteensixtyfour.base.AbstractTest;
 import com.beertime.sixteensixtyfour.utils.ScreenshotTaker;
 import com.beertime.sixteensixtyfour.webpages.AgeGate;
 import org.exparity.hamcrest.date.Moments;
+import org.hamcrest.BaseMatcher;
+import org.hamcrest.Description;
+import org.hamcrest.Matcher;
+import org.hamcrest.TypeSafeMatcher;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -41,6 +47,7 @@ public class AgeGateTests extends AbstractTest {
      * This test verifies that the error message provided by the customer
      * appears on the screen upon clicking the "Non" button.
      */
+    //without custom matcher
     @Test(description = "Testing functionality of NON button")
     public void verifyNonButtonMessage() {
 
@@ -80,6 +87,35 @@ public class AgeGateTests extends AbstractTest {
 
         assertThat(cookieExpiryDate, within(8, TimeUnit.DAYS, Moments.today()));
 
+    }
+
+    @Test(description = "Testing functionality of NON button - with custom matcher")
+    public void verifyNonButtonMessageCustomMatcher() {
+
+        AgeGate ageGate = new AgeGate(driver);
+        ageGate.clickOnNonButton();
+
+        assertThat(driver, isErrorMessageDisplayed("Vous devez être majeur pour accéder à 1664."));
+    }
+
+    private Matcher<WebDriver> isErrorMessageDisplayed(final String s) {
+        return new TypeSafeMatcher<WebDriver>() {
+            final WebElement element = driver.findElement(By.xpath(".//*[text()='Vous devez être majeur pour accéder à 1664.']"));
+            @Override
+            public boolean matchesSafely(final WebDriver o) {
+                return s.equals(element.getText());
+            }
+
+            @Override
+            public void describeTo(final Description description) {
+                description.appendText(s);
+            }
+
+            @Override
+            public void describeMismatchSafely(final WebDriver o, final Description mismatchDescription) {
+                mismatchDescription.appendText(element.getText());
+            }
+        };
     }
 
 }
