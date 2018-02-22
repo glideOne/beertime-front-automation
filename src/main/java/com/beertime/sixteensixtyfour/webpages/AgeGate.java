@@ -25,7 +25,7 @@ public class AgeGate {
     @FindBy(xpath = ".//*[text()='NON']")
     private WebElement nonButton;
 
-    @FindBy(xpath = ".//*[text()='Vous devez être majeur pour accéder à #Beertime.']")
+    @FindBy(xpath = ".//*[text()='Vous devez être majeur pour accéder à 1664.']")
     private WebElement nonAgeGateMessage;
 
     @FindBy(className = "menu")
